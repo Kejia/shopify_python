@@ -237,7 +237,7 @@ class TestGoogleStyleGuideChecker(pylint.testutils.CheckerTestCase):
         unary_message = pylint.testutils.Message('lambda-func', node=ulam_fail, args={
             'op': 'operator.neg',
             'lambda_fun': 'lambda x: - x'
-            })
+        })
         with self.assertAddsMessages(unary_message):
             self.walk(unary_root)
 
